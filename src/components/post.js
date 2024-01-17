@@ -7,9 +7,12 @@ const Post = () => {
 
     useEffect(() => {
         const getPost = async () => {
-            const resp = await fetch(`/api/post/${id}`);
-            const postResp = await resp.json();
-            setPost(postResp);
+            const response = await fetch(`/api/post/${id}`);
+
+            if (response.status >= 200 && response.status <= 299) {
+                const postResponse = await response.json();
+                setPost(postResponse);
+            }
         };
 
         getPost();
