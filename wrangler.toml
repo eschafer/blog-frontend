@@ -1,5 +1,0 @@
-[[d1_databases]]
-binding = "DB" # available in your Pages Function on env.DB
-database_name = "prod-db-blog"
-database_id = "2b472adc-3219-4d9e-a6c7-6d33582282cb"
-preview_database_id = "2b472adc-3219-4d9e-a6c7-6d33582282cb" # Required for Pages local development
